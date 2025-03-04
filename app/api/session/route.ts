@@ -3,7 +3,6 @@ import { ragChat } from "@/lib/rag-chat";
 import { redis } from "@/lib/redis";
 import { cookies } from "next/headers";
 
-// Function to reconstruct the URL properly
 function reconstructUrl(url: string | string[] | undefined): string {
   if (!url) return "";
   if (typeof url === "string") {
